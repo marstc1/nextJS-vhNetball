@@ -1,6 +1,7 @@
 import { DM_Serif_Text } from "next/font/google";
 import Image from "next/image";
 import RegistrationForm from "./components/RegistrationForm";
+import PaymentGuide from "./components/PaymentGuide";
 
 const dmSerifFont = DM_Serif_Text({
   subsets: ["latin"],
@@ -52,7 +53,8 @@ export default function Home() {
                   <p className="mb-3">
                     Following the success of previous years, we're thrilled to
                     host both women's and mixed competitive tournaments. Check
-                    the 'About the Event' section for all the details.
+                    the <a className="underline underline-offset-4" href="#event-info">'About the Event'</a> section for
+                    all the details.
                   </p>
                   <p className="mb-3">
                     Register your team today, places fill up quickly! Can't wait
@@ -111,11 +113,14 @@ export default function Home() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mt-8 mb-6">
                 <div className="relative inline-block">
-                  <button className="bg-indigo-950 text-white text-lg py-3 px-12 rounded-full hover:shadow-md">
+                  <a
+                    className="bg-indigo-950 text-white text-lg py-4 px-12 rounded-full hover:shadow-md"
+                    href="#registration-form"
+                  >
                     Register and pay
-                  </button>
+                  </a>
                   <Image
-                    className="absolute top-1 right-8 transform -translate-y-1/2 translate-x-1/2 rotate-12 w-8 h-8 shadow-lg"
+                    className="absolute -top-2 right-8 transform -translate-y-1/2 translate-x-1/2 rotate-12 w-8 h-8 shadow-lg"
                     src="/butterfly-logo.png"
                     alt=""
                     role="presentation"
@@ -157,8 +162,8 @@ export default function Home() {
               />
               <p className="my-4">
                 Friendly but competitive, ideal for those who don’t usually
-                play. Mixed teams are welcome, with up to three affiliated netballers
-                (only two on court at a time).
+                play. Mixed teams are welcome, with up to three affiliated
+                netballers (only two on court at a time).
               </p>
             </div>
 
@@ -210,7 +215,9 @@ export default function Home() {
               </div>
 
               <div className="mt-10">
-                <span className="font-semibold">Each team is required to provide a C award umpire.</span>
+                <span className="font-semibold">
+                  Each team is required to provide a C award umpire.
+                </span>
                 <br />
                 <span className="text-xs">
                   We may accept experienced beginners working towards their C
@@ -235,67 +242,69 @@ export default function Home() {
       </div>
 
       <div className="relative bg-gradient-to-t from-white to-violet-50 top-16">
-        <div className="relative container mx-auto max-w-screen-lg -top-16">
-          <section
-            id="registration-form"
-            className="px-8 mx-auto py-4 md:w-1/2 my-10 border-2 border-neutral-300 bg-neutral-50 text-indigo-950 rounded-md shadow-lg"
-          >
-            <h2 className="text-2xl text-center font-semibold m-8">
-              Register and pay
-            </h2>
+        <div
+          id="registration-form"
+          className="relative container mx-auto max-w-screen-lg -top-16"
+        >
+          <section className="px-8 mx-auto py-4 my-10 border-2 border-neutral-300 bg-neutral-50 text-indigo-950 rounded-md shadow-lg">
             <RegistrationForm />
+          </section>
+        </div>
+
+        <div
+          id="payment-section"
+          className="relative container mx-auto max-w-screen-lg -top-16"
+        >
+          <section className="px-8 mx-auto py-4 my-10 border-2 border-neutral-300 bg-neutral-50 text-indigo-950 rounded-md shadow-lg">
+            <PaymentGuide />
           </section>
         </div>
       </div>
 
       <div className="bg-violet-50 text-indigo-950">
-        <div className="container mx-auto py-8 max-w-screen-lg px-4 pt-20 pb-14">
-          <section id="about-victoria" className="text-sm">
-            <div className="container mx-auto flex items-center justify-center">
-              <div className="relative bg-white shadow-lg rounded-lg overflow-hidden flex flex-col md:flex-row">
-                <div className="md:w-1/2">
-                  <Image
-                    src="/victoria.jpg"
-                    width={200}
-                    height={600}
-                    alt="Victoria"
-                    className="h-full w-full object-cover"
-                  />
-                </div>
-                <div className="absolute top-0 right-0 w-1/2 p-8">
-                  <h2 className="text-2xl font-semibold mb-8 text-center">
-                    In Memory of Victoria Hawkins
-                  </h2>
-                  <p className="mb-6">
-                    Victoria worked in the Accident and Emergency unit at
-                    Norfolk and Norwich hospital and was diagnosed with
-                    cardiomyopathy. Despite years of care, she was declared
-                    stable for her family's dream holiday to Florida.
-                    Tragically, she passed away from Viral Myocarditis on 31
-                    October 2014 during that trip.
-                  </p>
-                  <p className="mb-6">
-                    After Vicky's sudden death, I organized a netball tournament
-                    in her memory. I was amazed by the positive response and
-                    love that people now eagerly anticipate this event every
-                    year.
-                  </p>
-                  <p className="mb-6">
-                    Our annual netball tournament celebrates Victoria Hawkins, a
-                    remarkable netballer known in the community for her time
-                    with McCarthy Stars and Panthers. The event also raises
-                    funds for Nelson's Journey, a charity close to our hearts.
-                  </p>
-                  <p className="mb-6">
-                    Nelson's Journey has been a tremendous support to Victoria’s
-                    husband, Mark, and their children, Izzy and Max. Their
-                    services are invaluable, and it’s an honor to assist them by
-                    having them participate in our day.
-                  </p>
-                  <p className="mt-8">
-                    We hope you can join us in celebrating Vicky's memory.
-                  </p>
-                </div>
+        <div className="container mx-auto max-w-screen-lg px-4 pt-24 pb-16">
+          <section id="about-victoria">
+            <div className="relative bg-white shadow-lg rounded-lg overflow-hidden flex flex-col md:flex-row">
+              <div className="md:w-1/2">
+                <Image
+                  src="/victoria.jpg"
+                  width={200}
+                  height={600}
+                  alt="Victoria"
+                  className="h-full w-full object-cover"
+                />
+              </div>
+              <div className="absolute top-0 right-0 w-1/2 p-8">
+                <h2 className="text-2xl font-semibold mb-8 text-center">
+                  In Memory of Victoria Hawkins
+                </h2>
+                <p className="mb-6">
+                  Victoria worked in the Accident and Emergency unit at Norfolk
+                  and Norwich hospital and was diagnosed with cardiomyopathy.
+                  Despite years of care, she was declared stable for her
+                  family's dream holiday to Florida. Tragically, she passed away
+                  from Viral Myocarditis on 31 October 2014 during that trip.
+                </p>
+                <p className="mb-6">
+                  After Vicky's sudden death, I organized a netball tournament
+                  in her memory. I was amazed by the positive response and love
+                  that people now eagerly anticipate this event every year.
+                </p>
+                <p className="mb-6">
+                  Our annual netball tournament celebrates Victoria Hawkins, a
+                  remarkable netballer known in the community for her time with
+                  McCarthy Stars and Panthers. The event also raises funds for
+                  Nelson's Journey, a charity close to our hearts.
+                </p>
+                <p className="mb-6">
+                  Nelson's Journey has been a tremendous support to Victoria’s
+                  husband, Mark, and their children, Izzy and Max. Their
+                  services are invaluable, and it’s an honor to assist them by
+                  having them participate in our day.
+                </p>
+                <p className="mt-8">
+                  We hope you can join us in celebrating Vicky's memory.
+                </p>
               </div>
             </div>
           </section>
