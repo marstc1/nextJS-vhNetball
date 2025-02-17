@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bg-custom-purple-200 {
+  background-color: #FBF2F3;
+}
+
+.bg-custom-purple-900 {
+  background-color: #362538;
+}
+
+.text-custom-purple-900 {
+  color: #362538;
+}
+
+.bg-netball-pattern {
+  background-image: url('/netball-repeating-bg.gif');
+  background-size: 512px 512px;
+}
