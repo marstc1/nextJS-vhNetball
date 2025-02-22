@@ -29,7 +29,7 @@ const Hero = () => {
             <p className="mb-4">Hey everyone,</p>
             <p className="mb-4">
               We&apos;re back with our annual netball tournament on{" "}
-              <b>Saturday, 24th June 2025</b>, at City Academy, and we&apos;d love to
+              <b>Saturday, 28th June 2025</b>, at City Academy, and we&apos;d love to
               see you there!
             </p>
             <p className="mb-4">

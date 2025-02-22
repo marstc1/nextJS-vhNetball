@@ -13,13 +13,13 @@ const EventInfo = () => {
             <p>
               <strong>Date:</strong>
             </p>
-            <p>29/06/2025</p>
+            <p>28/06/2025</p>
           </div>
           <div className="bg-violet-50 rounded p-4">
             <p>
               <strong>Entry Cutoff:</strong>
             </p>
-            <p>03/06/2025</p>
+            <p>09/06/2025</p>
             <p>unless filled earlier</p>
           </div>
           <div className="bg-violet-50 rounded p-4">
