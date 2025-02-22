@@ -63,11 +63,11 @@ export default function Home() {
                   Victoria worked in the Accident and Emergency unit at Norfolk
                   and Norwich hospital and was diagnosed with cardiomyopathy.
                   Despite years of care, she was declared stable for her
-                  family's dream holiday to Florida. Tragically, she passed away
+                  family&apos;s dream holiday to Florida. Tragically, she passed away
                   from Viral Myocarditis on 31 October 2014 during that trip.
                 </p>
                 <p className="mb-6">
-                  After Vicky's sudden death, I organized a netball tournament
+                  After Vicky&apos;s sudden death, I organized a netball tournament
                   in her memory. I was amazed by the positive response and love
                   that people now eagerly anticipate this event every year.
                 </p>
@@ -75,16 +75,16 @@ export default function Home() {
                   Our annual netball tournament celebrates Victoria Hawkins, a
                   remarkable netballer known in the community for her time with
                   McCarthy Stars and Panthers. The event also raises funds for
-                  Nelson's Journey, a charity close to our hearts.
+                  Nelson&apos;s Journey, a charity close to our hearts.
                 </p>
                 <p className="mb-6">
-                  Nelson's Journey has been a tremendous support to Victoria’s
+                  Nelson&apos;s Journey has been a tremendous support to Victoria’s
                   husband, Mark, and their children, Izzy and Max. Their
                   services are invaluable, and it’s an honor to assist them by
                   having them participate in our day.
                 </p>
                 <p className="mt-8">
-                  We hope you can join us in celebrating Vicky's memory.
+                  We hope you can join us in celebrating Vicky&apos;s memory.
                 </p>
               </div>
             </div>
@@ -95,7 +95,7 @@ export default function Home() {
       <footer className="bg-slate-950 text-xs text-white py-4">
         <div className="container mx-auto">
           <p className="text-center">
-            © {new Date().getFullYear()} Victoria's Charity Netball Event
+            © {new Date().getFullYear()} Victoria&apos;s Charity Netball Event
           </p>
         </div>
       </footer>

@@ -338,7 +338,7 @@ const RegistrationForm = () => {
                   Please make your payment within 48 hours of registration.
                 </p>
                 <p className="text-sm">
-                  Your entry is only confirmed upon reciept of payment. Don't
+                  Your entry is only confirmed upon reciept of payment. Don&apos;t
                   delay, as places are limited.
                 </p>
               </div>

@@ -28,15 +28,15 @@ const Hero = () => {
           <div className="my-10">
             <p className="mb-4">Hey everyone,</p>
             <p className="mb-4">
-              We're back with our annual netball tournament on{" "}
-              <b>Saturday, 24th June 2025</b>, at City Academy, and we'd love to
+              We&apos;re back with our annual netball tournament on{" "}
+              <b>Saturday, 24th June 2025</b>, at City Academy, and we&apos;d love to
               see you there!
             </p>
             <p className="mb-4">
-              This year, we're continuing the fun with both women's and mixed
+              This year, we&apos;re continuing the fun with both women&apos;s and mixed
               competitive tournaments. You can find all the details in the{" "}
               <a className="underline underline-offset-4" href="#event-info">
-                'About the Event'
+                &apos;About the Event&apos;
               </a>{" "}
               section below.
             </p>

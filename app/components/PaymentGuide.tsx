@@ -21,7 +21,7 @@ const PaymentGuide = () => {
 
       <p className="font-semibold my-6">
         Please make your payment within the next 48 hours. Your entry is only
-        confirmed upon reciept of payment. Don't delay, as places are limited.
+        confirmed upon reciept of payment. Don&apos;t delay, as places are limited.
       </p>
 
       <p className="my-6">
