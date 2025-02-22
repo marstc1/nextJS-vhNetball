@@ -1,6 +1,5 @@
 import Image from "next/image";
 import RegistrationForm from "./components/RegistrationForm";
-import PaymentGuide from "./components/PaymentGuide";
 import Hero from "./components/Hero";
 import EventInfo from "./components/EventInfo";
 
