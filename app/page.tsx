@@ -20,7 +20,7 @@ export default function Home() {
       </div>
 
       <a id="registration-form" />
-      <div className="bg-gradient-to-t from-white to-violet-50 pb-1">
+      <div className="text-indigo-950 bg-gradient-to-t from-white to-violet-50 pb-1">
         <div className="container mx-auto max-w-screen-lg px-4 py-6">
           <h2 className="text-3xl font-bold pt-8">Register and Pay</h2>
           <p className="text-sm mt-8 mb-4">
