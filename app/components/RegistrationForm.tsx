@@ -82,17 +82,24 @@ const RegistrationForm = () => {
   };
 
   const handleRegistrationSubmit = async (
-    e: React.FormEvent<HTMLFormElement>
+    event: React.FormEvent<HTMLFormElement>
   ) => {
-    e.preventDefault();
+    event.preventDefault();
+    
     if (validateForm()) {
-      // Construct form data for Netlify submission
-      const form = e.target as HTMLFormElement;
-      const formData = new FormData(form);
+      const formData = new FormData(event.currentTarget);
+
+      const entries: [string, FormDataEntryValue][] = Array.from(formData.entries());
+      const params = new URLSearchParams();
+
+      entries.forEach(([key, value]) => {
+        params.append(key, value.toString());
+      });
 
       const response = await fetch("/__forms.html", {
         method: "POST",
-        body: formData,
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: params.toString(),
       });
 
       if (response.ok) {
