@@ -7,61 +7,50 @@ import EventInfo from "./components/EventInfo";
 export default function Home() {
   return (
     <>
-      <div className="bg-white text-indigo-950">
-        <header className="bg-white py-5 container mx-auto max-w-screen-lg px-4">
-          <div className="container mx-auto">
-            <Image
-              src="/butterfly-logo.png"
-              alt=""
-              role="presentation"
-              width={60}
-              height={46}
-            />
-          </div>
-        </header>
-      </div>
-
       <div className="bg-violet-100 text-indigo-950">
-        <main className="container mx-auto max-w-screen-lg px-4 py-10">
+        <main className="container mx-auto max-w-screen-lg px-4 py-4 md:py-10">
           <Hero />
         </main>
       </div>
 
+      <a id="event-info" />
       <div className="bg-white text-indigo-950">
         <div className="container mx-auto max-w-screen-lg px-4 py-16">
           <EventInfo />
         </div>
       </div>
 
-      <div className="relative bg-gradient-to-t from-white to-violet-50 top-16">
-        <div
-          id="registration-form"
-          className="relative container mx-auto max-w-screen-lg -top-16 px-4 md:px-20"
-        >
-          <section className="px-8 mx-auto py-4 my-10 border-2 border-neutral-300 bg-neutral-50 text-indigo-950 rounded-md shadow-lg">
-            <RegistrationForm />
-          </section>
-        </div>
+      <a id="registration-form" />
+      <div className="bg-gradient-to-t from-white to-violet-50 pb-1">
+        <div className="container mx-auto max-w-screen-lg px-4 py-6">
+          <h2 className="text-3xl font-bold pt-8">Register and Pay</h2>
+          <p className="text-sm mt-8 mb-4">
+            <strong>Already registered?</strong>
+            <br /> Visit our{" "}
+            <a
+              className="underline underline-offset-4"
+              href="#SumUpPaymentPage"
+            >
+              SumUp payment page
+            </a>{" "}
+            to submit your £50 entry fee.
+          </p>
 
-        <div
-          id="payment-section"
-          className="relative container mx-auto max-w-screen-lg -top-16 px-4 md:px-20"
-        >
-          <section className="px-8 mx-auto py-4 my-10 border-2 border-neutral-300 bg-neutral-50 text-indigo-950 rounded-md shadow-lg">
-            <PaymentGuide />
+          <section className="lg:mx-16 my-10 px-8 py-4 border-2 border-neutral-300 bg-neutral-50 text-indigo-950 rounded-md shadow-lg">
+            <RegistrationForm />
           </section>
         </div>
       </div>
 
       <div className="bg-violet-50 text-indigo-950">
-        <div className="container mx-auto max-w-screen-lg px-4 pt-24 pb-16">
+        <div className="container mx-auto max-w-screen-lg px-4 py-16">
           <section id="about-victoria">
             <div className="relative shadow-lg rounded-lg bg-white overflow-hidden flex flex-col lg:flex-row">
               <div className="lg:w-1/2">
                 <Image
                   src="/victoria.jpg"
-                  width={200}
-                  height={600}
+                  width={496}
+                  height={660}
                   alt="Victoria"
                   className="h-full w-full object-cover"
                 />

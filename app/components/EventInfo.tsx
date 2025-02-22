@@ -3,10 +3,47 @@ import Image from "next/image";
 
 const EventInfo = () => {
   return (
-    <section id="event-info">
+    <section>
       <h2 className="text-3xl font-bold mb-8">About the Event</h2>
 
-      <div className="sm:flex my-8">
+      <h3 className="text-xl font-semibold mb-2">Key Information:</h3>
+      <div className="container mx-auto p-1 pb-8">
+        <div className="grid grid-cols-1 sm:grid-cols-5 gap-4">
+          <div className="bg-violet-50 rounded p-4">
+            <p>
+              <strong>Date:</strong>
+            </p>
+            <p>29/06/2025</p>
+          </div>
+          <div className="bg-violet-50 rounded p-4">
+            <p>
+              <strong>Entry Cutoff:</strong>
+            </p>
+            <p>03/06/2025</p>
+            <p>unless filled earlier</p>
+          </div>
+          <div className="bg-violet-50 rounded p-4">
+            <p>
+              <strong>Location:</strong>
+            </p>
+            <p>City Academy, Norwich, NR4 7LP</p>
+          </div>
+          <div className="bg-violet-50 rounded p-4">
+            <p>
+              <strong>Cost:</strong>
+            </p>
+            <p>£50 per team</p>
+          </div>
+          <div className="bg-violet-50 rounded p-4">
+            <p>
+              <strong>Minimum Age:</strong>
+            </p>
+            <p>16+</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="sm:flex my-8 pb-8">
         <div className="sm:w-1/3 px-2 sm:pr-4">
           <h3 className="text-xl font-semibold mb-4">Morning Session:</h3>
           <ul className="my-4 list-disc list-inside text-gray-700">
@@ -16,7 +53,11 @@ const EventInfo = () => {
             <li>Finish: 12:30pm</li>
           </ul>
 
-          <h4 className="font-semibold my-4">Casual Champs<br />Tournament:</h4>
+          <h4 className="font-semibold mt-8">
+            Casual Champs
+            <br />
+            Tournament:
+          </h4>
           <Image
             className="rounded w-full my-4"
             src="/2018_7.jpg"
@@ -43,8 +84,10 @@ const EventInfo = () => {
 
           <div className="sm:flex">
             <div className="sm:w-1/2 sm:pr-2">
-              <h4 className="font-semibold my-4">
-                Women’s Competitive<br />Tournament:
+              <h4 className="font-semibold mt-8">
+                Women’s Competitive
+                <br />
+                Tournament:
               </h4>
               <Image
                 className="rounded w-full my-4"
@@ -60,8 +103,10 @@ const EventInfo = () => {
               </p>
             </div>
             <div className="sm:w-1/2 sm:pl-2">
-              <h4 className="font-semibold my-4">
-                Mixed Competitive<br />Tournament:
+              <h4 className="font-semibold mt-8">
+                Mixed Competitive
+                <br />
+                Tournament:
               </h4>
               <Image
                 className="rounded w-full my-4"
@@ -91,15 +136,37 @@ const EventInfo = () => {
         </div>
       </div>
 
-      <div className=" bg-violet-50 container mx-auto max-w-screen-lg p-8 rounded-md">
-        <h3 className="text-xl font-semibold mb-2">Event Highlights:</h3>
-        <p className="text-gray-700 my-2">
-          We’ll have a BBQ with vegetarian options, raffle, silent auction, and
-          a cake stall including vegan options.
-        </p>
-        <p>
-          Family and friends are welcome to join and support Nelson's Journey.
-        </p>
+      <h3 className="text-xl font-semibold mb-2">Event Highlights:</h3>
+      <div className="container mx-auto p-1">
+        <div className="grid grid-cols-1 sm:grid-cols-5 gap-4">
+          <div className="bg-violet-50 rounded p-4">
+            <p>
+              <strong>BBQ</strong>
+            </p>
+            <p>Veggie options included!</p>
+          </div>
+          <div className="bg-violet-50 rounded p-4">
+            <p>
+              <strong>Raffle Extravaganza</strong>
+            </p>
+          </div>
+          <div className="bg-violet-50 rounded p-4">
+            <p>
+              <strong>Silent Auction</strong>
+            </p>
+          </div>
+          <div className="bg-violet-50 rounded p-4">
+            <p>
+              <strong>Cake Stall</strong>
+            </p>
+            <p>Vegan goodies too!</p>
+          </div>
+          <div className="bg-violet-50 rounded p-4">
+            <p>
+              <strong>Family and friends are welcome!</strong>
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   );
