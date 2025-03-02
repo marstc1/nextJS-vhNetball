@@ -178,11 +178,10 @@ const RegistrationForm = () => {
                     <option value="" disabled>
                       Select an option
                     </option>
-                    <option value="just-for-fun">Casual Champs</option>
+                    <option value="just-for-fun">Fun</option>
                     <option value="competitive-womens">
                       Womens Competitive
                     </option>
-                    <option value="competitive-mixed">Mixed Competitive</option>
                   </select>
                 </div>
 

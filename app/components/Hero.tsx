@@ -14,14 +14,14 @@ const Hero = () => {
         <div className="w-full lg:w-1/2 p-4">
           <h1 className="font-bold mb-6">
             <span className={`${dmSerifFont.className} text-2xl block`}>
-              The annual
+              The
             </span>
             <span className={`${dmSerifFont.className} text-7xl block`}>
               Victoria <br />
               Hawkins
             </span>
             <span className={`${dmSerifFont.className} text-3xl block py-1`}>
-              Charity Netball Event
+              10th Memorial Netball Tournament
             </span>
           </h1>
 
@@ -29,19 +29,20 @@ const Hero = () => {
             <p className="mb-4">Hey everyone,</p>
             <p className="mb-4">
               We&apos;re back with our annual netball tournament on{" "}
-              <b>Saturday, 28th June 2025</b>, at City Academy, and we&apos;d love to
-              see you there!
+              <b>Saturday, 28th June 2025</b>, at City Academy, and we&apos;d
+              love to see you there!
             </p>
             <p className="mb-4">
-              This year, we&apos;re continuing the fun with both women&apos;s and mixed
-              competitive tournaments. You can find all the details in the{" "}
+              This year, we&apos;re continuing with both the fun and
+              women&apos;s competitive tournaments. You can find all the details
+              in the{" "}
               <a className="underline underline-offset-4" href="#event-info">
                 &apos;About the Event&apos;
               </a>{" "}
               section below.
             </p>
             <p className="mb-4">
-              Make sure to register your team soon, as spots fill up fast.
+              Make sure to register your team soon, as places fill up fast.
             </p>
           </div>
           <div className="py-8">
@@ -66,8 +67,8 @@ const Hero = () => {
         <div className="w-full lg:w-1/2 lg:flex lg:items-end">
           <Image
             src="/hero.png"
-            width={455}
-            height={455}
+            width={1024}
+            height={1124}
             alt=""
             className="hidden lg:block w-full max-w-96 ml-auto pb-8"
           />

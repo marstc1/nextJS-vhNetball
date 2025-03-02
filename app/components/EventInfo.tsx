@@ -44,7 +44,7 @@ const EventInfo = () => {
       </div>
 
       <div className="sm:flex my-8 pb-8">
-        <div className="sm:w-1/3 px-2 sm:pr-4">
+        <div className="sm:w-1/2 px-2 sm:pr-4 pb-8 sm:pb-0">
           <h3 className="text-xl font-semibold mb-4">Morning Session:</h3>
           <ul className="my-4 list-disc list-inside text-gray-700">
             <li>Registration: 9:15am</li>
@@ -54,26 +54,46 @@ const EventInfo = () => {
           </ul>
 
           <h4 className="font-semibold mt-8">
-            Casual Champs
+            Fun
             <br />
             Tournament:
           </h4>
+
           <Image
             className="rounded w-full my-4"
             src="/2018_7.jpg"
             alt=""
             role="presentation"
-            width={320}
-            height={214}
+            width={472}
+            height={315}
           />
+
           <p className="my-4">
             Friendly but competitive, ideal for those who don’t usually play.
             Mixed teams are welcome, with up to three affiliated netballers
             (only two on court at a time).
           </p>
+
+          <div className="mt-10">
+            <span className="font-semibold">
+              Teams are not required to bring an umpire.
+            </span>
+            <br />
+            <span className="text-xs">
+              However, if you have someone who would like to help then to please
+              email{" "}
+              <a
+                className="underline underline-offset-4"
+                href="mailto:victoriahawkinsnetball@gmail.com?subject=Payment%20Question"
+              >
+                victoriahawkinsnetball@gmail.com
+              </a>
+              .
+            </span>
+          </div>
         </div>
 
-        <div className="sm:w-2/3 px-2 sm:px-4 py-4 sm:py-0 border-t-2 sm:border-t-0 sm:border-l-2 border-dotted border-violet-200">
+        <div className="sm:w-1/2 pt-8 sm:pt-0 px-2 sm:pl-4 border-t-2 sm:border-t-0 sm:border-l-2 border-dotted border-violet-200">
           <h3 className="text-xl font-semibold mb-4">Afternoon Session:</h3>
           <ul className="list-disc list-inside text-gray-700">
             <li>Registration: 11:35am</li>
@@ -82,46 +102,23 @@ const EventInfo = () => {
             <li>Finish: 4:15pm</li>
           </ul>
 
-          <div className="sm:flex">
-            <div className="sm:w-1/2 sm:pr-2">
-              <h4 className="font-semibold mt-8">
-                Women’s Competitive
-                <br />
-                Tournament:
-              </h4>
-              <Image
-                className="rounded w-full my-4"
-                src="/2018_1.jpg"
-                alt=""
-                role="presentation"
-                width={320}
-                height={214}
-              />
-              <p>
-                Affiliated women players in competitive teams. Teams grouped by
-                similar divisions, with semis and finals if enough teams join.
-              </p>
-            </div>
-            <div className="sm:w-1/2 sm:pl-2">
-              <h4 className="font-semibold mt-8">
-                Mixed Competitive
-                <br />
-                Tournament:
-              </h4>
-              <Image
-                className="rounded w-full my-4"
-                src="/4.jpg"
-                alt=""
-                role="presentation"
-                width={320}
-                height={214}
-              />
-              <p className="my-4">
-                Mixed teams follow EN mixed team rules. Max three non-female
-                players on court, with specific group rules.
-              </p>
-            </div>
-          </div>
+          <h4 className="font-semibold mt-8">
+            Women’s Competitive
+            <br />
+            Tournament:
+          </h4>
+          <Image
+            className="rounded w-full my-4"
+            src="/2018_1.jpg"
+            alt=""
+            role="presentation"
+            width={472}
+            height={315}
+          />
+          <p>
+            Affiliated women players in competitive teams. Teams grouped by
+            similar divisions, with semis and finals if enough teams join.
+          </p>
 
           <div className="mt-10">
             <span className="font-semibold">

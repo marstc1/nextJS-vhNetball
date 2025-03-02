@@ -62,25 +62,24 @@ export default function Home() {
                   Victoria worked in the Accident and Emergency unit at Norfolk
                   and Norwich hospital and was diagnosed with cardiomyopathy.
                   Despite years of care, she was declared stable for her
-                  family&apos;s dream holiday to Florida. Tragically, she passed away
-                  from Viral Myocarditis on 31 October 2014 during that trip.
+                  family&apos;s dream holiday to Florida. Tragically, she passed
+                  away from Viral Myocarditis on 31 October 2014 during that
+                  trip.
                 </p>
                 <p className="mb-6">
-                  After Vicky&apos;s sudden death, I organized a netball tournament
-                  in her memory. I was amazed by the positive response and love
-                  that people now eagerly anticipate this event every year.
+                  After Vicky&apos;s sudden death, I organized a netball
+                  tournament in her memory. After the amazing support we
+                  received after the 1st year, the tournament has become an
+                  annual event. Now on its 10th year, we have raised over
+                  £29,900 for Nelson’s Journey. There services are invaluable,
+                  and it’s an honor to assist them by raising as much as we can
+                  at the tournament.
                 </p>
                 <p className="mb-6">
                   Our annual netball tournament celebrates Victoria Hawkins, a
                   remarkable netballer known in the community for her time with
                   McCarthy Stars and Panthers. The event also raises funds for
                   Nelson&apos;s Journey, a charity close to our hearts.
-                </p>
-                <p className="mb-6">
-                  Nelson&apos;s Journey has been a tremendous support to Victoria’s
-                  husband, Mark, and their children, Izzy and Max. Their
-                  services are invaluable, and it’s an honor to assist them by
-                  having them participate in our day.
                 </p>
                 <p className="mt-8">
                   We hope you can join us in celebrating Vicky&apos;s memory.
@@ -91,10 +90,12 @@ export default function Home() {
         </div>
       </div>
 
-      <footer className="bg-slate-950 text-xs text-white py-4">
+      <footer className="bg-slate-800 text-xs text-white py-4">
         <div className="container mx-auto">
           <p className="text-center">
-            © {new Date().getFullYear()} Victoria&apos;s Charity Netball Event
+            The Victoria Hawkins 10th Memorial
+            Netball Tournament<br />
+            © {new Date().getFullYear()} 
           </p>
         </div>
       </footer>
