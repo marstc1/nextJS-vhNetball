@@ -23,18 +23,7 @@ export default function Home() {
       <div className="text-indigo-950 bg-gradient-to-t from-white to-violet-50 pb-1">
         <div className="container mx-auto max-w-screen-lg px-4 py-6">
           <h2 className="text-3xl font-bold pt-8">Register and Pay</h2>
-          <p className="text-sm mt-8 mb-4">
-            <strong>Already registered?</strong>
-            <br /> Visit our{" "}
-            <a
-              className="underline underline-offset-4"
-              href="#SumUpPaymentPage"
-            >
-              SumUp payment page
-            </a>{" "}
-            to submit your £50 entry fee.
-          </p>
-
+          
           <section className="lg:mx-16 my-10 px-8 py-4 border-2 border-neutral-300 bg-neutral-50 text-indigo-950 rounded-md shadow-lg">
             <RegistrationForm />
           </section>
@@ -93,9 +82,8 @@ export default function Home() {
       <footer className="bg-slate-800 text-xs text-white py-4">
         <div className="container mx-auto">
           <p className="text-center">
-            The Victoria Hawkins 10th Memorial
-            Netball Tournament<br />
-            © {new Date().getFullYear()} 
+            The Victoria Hawkins 10th Memorial Netball Tournament
+            <br />© {new Date().getFullYear()}
           </p>
         </div>
       </footer>

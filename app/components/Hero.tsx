@@ -10,8 +10,8 @@ const dmSerifFont = DM_Serif_Text({
 const Hero = () => {
   return (
     <section id="hero">
-      <div className="flex flex-col lg:flex-row">
-        <div className="w-full lg:w-1/2 p-4">
+      <div className="flex flex-col md:flex-row">
+        <div className="w-full md:w-1/2 p-4">
           <h1 className="font-bold mb-6">
             <span className={`${dmSerifFont.className} text-2xl block`}>
               The
@@ -25,7 +25,17 @@ const Hero = () => {
             </span>
           </h1>
 
-          <div className="my-10">
+          <div className="md:hidden w-full">
+            <Image
+              src="/hero.png"
+              width={1024}
+              height={1124}
+              alt=""
+              className="w-full max-w-96 pb-8 m-auto"
+            />
+          </div>
+
+          <div className="sm:my-10">
             <p className="mb-4">Hey everyone,</p>
             <p className="mb-4">
               We&apos;re back with our annual netball tournament on{" "}
@@ -64,13 +74,14 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="w-full lg:w-1/2 lg:flex lg:items-end">
+
+        <div className="hidden w-full md:w-1/2 md:flex md:items-end">
           <Image
             src="/hero.png"
             width={1024}
             height={1124}
             alt=""
-            className="hidden lg:block w-full max-w-96 ml-auto pb-8"
+            className="w-full max-w-96 ml-auto pb-8"
           />
         </div>
       </div>

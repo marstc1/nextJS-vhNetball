@@ -19,12 +19,13 @@ const RegistrationForm = () => {
 
   const [errors, setErrors] = useState({
     teamName: false,
-    playoffMusic: false,
     playType: false,
     umpireName: false,
     primaryContact: { name: false, phone: false, email: false },
     secondaryContact: { name: false, phone: false, email: false },
   });
+
+  const [isFun, setIsFun] = useState<boolean>(false);
 
   const [isRegistrationFormSubmitted, setIsRegistrationFormSubmitted] =
     useState<boolean>(false);
@@ -34,7 +35,6 @@ const RegistrationForm = () => {
   const validateForm = () => {
     const newErrors = {
       teamName: formData.teamName === "",
-      playoffMusic: formData.playoffMusic === "",
       playType: formData.playType === "",
       umpireName:
         formData.playType.includes("competitive") && formData.umpireName === "",
@@ -64,6 +64,11 @@ const RegistrationForm = () => {
       ...prevState,
       [name]: value,
     }));
+
+    // Set isFun based on playType
+    if (name === "playType") {
+      setIsFun(value === "just-for-fun");
+    }
   };
 
   const handleNestedInputChange = (
@@ -85,11 +90,13 @@ const RegistrationForm = () => {
     event: React.FormEvent<HTMLFormElement>
   ) => {
     event.preventDefault();
-    
+
     if (validateForm()) {
       const formData = new FormData(event.currentTarget);
 
-      const entries: [string, FormDataEntryValue][] = Array.from(formData.entries());
+      const entries: [string, FormDataEntryValue][] = Array.from(
+        formData.entries()
+      );
       const params = new URLSearchParams();
 
       entries.forEach(([key, value]) => {
@@ -137,7 +144,7 @@ const RegistrationForm = () => {
                   value="registration-form-2025"
                 />
                 <div>
-                  <label className="block">Team Name</label>
+                  <label className="block">Team name</label>
                   <input
                     type="text"
                     name="teamName"
@@ -151,14 +158,11 @@ const RegistrationForm = () => {
                 </div>
 
                 <div>
-                  <label className="block">Playoff Music</label>
+                  <label className="block">Playoff music (optional)</label>
                   <input
                     type="text"
                     name="playoffMusic"
-                    className={`bg-white mt-1 px-4 block w-full h-12 border ${
-                      errors.playoffMusic ? "border-red-500" : "border-gray-300"
-                    } rounded-md shadow-sm`}
-                    required
+                    className={`bg-white mt-1 px-4 block w-full h-12 border border-gray-300 rounded-md shadow-sm`}
                     value={formData.playoffMusic}
                     onChange={handleInputChange}
                   />
@@ -189,7 +193,7 @@ const RegistrationForm = () => {
                 {formData.playType.includes("competitive") && (
                   <div>
                     <label className="flex items-center">
-                      Umpire Name
+                      Umpire name
                       <FaInfoCircle
                         data-tooltip-id="umpire-tooltip"
                         className="ml-2 text-sky-600 cursor-pointer"
@@ -231,7 +235,7 @@ const RegistrationForm = () => {
 
               <div className="grid md:grid-cols-2 md:gap-6">
                 <div className="pt-10">
-                  <h3 className="text-lg font-semibold">Primary Contact</h3>
+                  <h3 className="text-lg font-semibold">Primary contact</h3>
                   <div className="mt-2">
                     <label className="block">Name</label>
                     <input
@@ -250,7 +254,7 @@ const RegistrationForm = () => {
                   </div>
 
                   <div className="mt-2">
-                    <label className="block">Telephone Number</label>
+                    <label className="block">Telephone number</label>
                     <input
                       type="tel"
                       className={`mt-1 px-4 block w-full h-12 border ${
@@ -267,7 +271,7 @@ const RegistrationForm = () => {
                   </div>
 
                   <div className="mt-2">
-                    <label className="block">Email Address</label>
+                    <label className="block">Email address</label>
                     <input
                       type="email"
                       className={`mt-1 px-4 block w-full h-12 border ${
@@ -285,7 +289,7 @@ const RegistrationForm = () => {
                 </div>
 
                 <div className="pt-10">
-                  <h3 className="text-lg font-semibold">Secondary Contact</h3>
+                  <h3 className="text-lg font-semibold">Secondary contact</h3>
                   <div className="mt-2">
                     <label className="block">Name</label>
                     <input
@@ -304,7 +308,7 @@ const RegistrationForm = () => {
                   </div>
 
                   <div className="mt-2">
-                    <label className="block">Telephone Number</label>
+                    <label className="block">Telephone number</label>
                     <input
                       type="tel"
                       className={`mt-1 px-4 block w-full h-12 border ${
@@ -321,7 +325,7 @@ const RegistrationForm = () => {
                   </div>
 
                   <div className="mt-2">
-                    <label className="block">Email Address</label>
+                    <label className="block">Email address</label>
                     <input
                       type="email"
                       className={`mt-1 px-4 block w-full h-12 border ${
@@ -340,16 +344,16 @@ const RegistrationForm = () => {
               </div>
 
               <div className="pt-6">
-                <p className="text-sm font-bold">
+                <p className="text-sm font-bold mb-1">
                   Please make your payment within 48 hours of registration.
                 </p>
-                <p className="text-sm">
-                  Your entry is only confirmed upon reciept of payment. Don&apos;t
-                  delay, as places are limited.
+                <p className="text-xs">
+                  Your entry is only confirmed upon reciept of payment.
+                  Don&apos;t delay, as places are limited.
                 </p>
               </div>
 
-              <div className="py-6">
+              <div className="pt-6">
                 <div className="relative inline-block">
                   <button className="bg-indigo-950 text-white text-lg py-3 px-12 rounded-full hover:shadow-md">
                     Register
@@ -364,12 +368,46 @@ const RegistrationForm = () => {
                   />
                 </div>
               </div>
+
+              <div className="pb-6 text-sm">
+                <p className="mt-8 mb-1">
+                  <strong>Already registered?</strong>
+                </p>
+                <p className="text-xs">
+                  Visit one of the following SumUp payment pages to submit your
+                  entry fee:
+                </p>
+                <ul className="list-disc text-xs ml-6">
+                  <li className="my-1">
+                    <a
+                      className="underline underline-offset-4"
+                      href="https://pay.sumup.com/b2c/QR8DR8IH"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Fun Tournament
+                    </a>{" "}
+                    - £60
+                  </li>
+                  <li className="my1">
+                    <a
+                      className="underline underline-offset-4"
+                      href="https://pay.sumup.com/b2c/Q4MEGPHH"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Competitive Tournament
+                    </a>{" "}
+                    - £70
+                  </li>
+                </ul>
+              </div>
             </form>
           </div>
         </div>
       ) : (
         <div ref={paymentFormRef}>
-          <PaymentGuide />
+          <PaymentGuide isFun={isFun} />
         </div>
       )}
     </div>

@@ -84,7 +84,7 @@ const EventInfo = () => {
               email{" "}
               <a
                 className="underline underline-offset-4"
-                href="mailto:victoriahawkinsnetball@gmail.com?subject=Payment%20Question"
+                href="mailto:victoriahawkinsnetball@gmail.com?subject=Umpire%20Help"
               >
                 victoriahawkinsnetball@gmail.com
               </a>
