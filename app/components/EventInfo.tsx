@@ -17,7 +17,7 @@ const EventInfo = () => {
           </div>
           <div className="bg-violet-50 rounded p-4">
             <p>
-              <strong>Entry Cutoff:</strong>
+              <strong>Entry cutoff:</strong>
             </p>
             <p>09/06/2025</p>
             <p>unless filled earlier</p>
@@ -30,13 +30,14 @@ const EventInfo = () => {
           </div>
           <div className="bg-violet-50 rounded p-4">
             <p>
-              <strong>Cost:</strong>
+              <strong>Cost per team:</strong>
             </p>
-            <p>£50 per team</p>
+            <p>Fun - £60</p>
+            <p>Competitive - £70</p>
           </div>
           <div className="bg-violet-50 rounded p-4">
             <p>
-              <strong>Minimum Age:</strong>
+              <strong>Minimum age:</strong>
             </p>
             <p>16+</p>
           </div>
@@ -135,7 +136,7 @@ const EventInfo = () => {
 
       <h3 className="text-xl font-semibold mb-2">Event Highlights:</h3>
       <div className="container mx-auto p-1">
-        <div className="grid grid-cols-1 sm:grid-cols-5 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-5 gap-4 sm:text-center">
           <div className="bg-violet-50 rounded p-4">
             <p>
               <strong>BBQ</strong>
