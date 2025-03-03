@@ -240,6 +240,7 @@ const RegistrationForm = () => {
                     <label className="block">Name</label>
                     <input
                       type="text"
+                      name="primaryContact.name"
                       className={`mt-1 px-4 block w-full h-12 border ${
                         errors.primaryContact.name
                           ? "border-red-500"
@@ -257,6 +258,7 @@ const RegistrationForm = () => {
                     <label className="block">Telephone number</label>
                     <input
                       type="tel"
+                      name="primaryContact.phone"
                       className={`mt-1 px-4 block w-full h-12 border ${
                         errors.primaryContact.phone
                           ? "border-red-500"
@@ -274,6 +276,7 @@ const RegistrationForm = () => {
                     <label className="block">Email address</label>
                     <input
                       type="email"
+                      name="primaryContact.email"
                       className={`mt-1 px-4 block w-full h-12 border ${
                         errors.primaryContact.email
                           ? "border-red-500"
@@ -294,6 +297,7 @@ const RegistrationForm = () => {
                     <label className="block">Name</label>
                     <input
                       type="text"
+                      name="secondaryContact.name"
                       className={`mt-1 px-4 block w-full h-12 border ${
                         errors.secondaryContact.name
                           ? "border-red-500"
@@ -311,6 +315,7 @@ const RegistrationForm = () => {
                     <label className="block">Telephone number</label>
                     <input
                       type="tel"
+                      name="secondaryContact.phone"
                       className={`mt-1 px-4 block w-full h-12 border ${
                         errors.secondaryContact.phone
                           ? "border-red-500"
@@ -328,6 +333,7 @@ const RegistrationForm = () => {
                     <label className="block">Email address</label>
                     <input
                       type="email"
+                      name="secondaryContact.email"
                       className={`mt-1 px-4 block w-full h-12 border ${
                         errors.secondaryContact.email
                           ? "border-red-500"
