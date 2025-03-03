@@ -169,7 +169,7 @@ const RegistrationForm = () => {
                 </div>
 
                 <div>
-                  <label className="block">Tounament</label>
+                  <label className="block">Tournament</label>
                   <select
                     name="playType"
                     className={`bg-white mt-1 px-4 block w-full h-12 border ${
@@ -354,7 +354,7 @@ const RegistrationForm = () => {
                   Please make your payment within 48 hours of registration.
                 </p>
                 <p className="text-xs">
-                  Your entry is only confirmed upon reciept of payment.
+                  Your entry is only confirmed upon receipt of payment.
                   Don&apos;t delay, as places are limited.
                 </p>
               </div>

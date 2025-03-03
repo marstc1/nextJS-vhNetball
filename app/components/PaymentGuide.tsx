@@ -33,7 +33,7 @@ const PaymentGuide: React.FC<PaymentGuideProps> = ({ isFun }) => {
         <span className="font-semibold">
           Please make your payment within the next 48 hours.
         </span>{" "}
-        Your entry is only confirmed upon reciept of payment. Don&apos;t delay,
+        Your entry is only confirmed upon receipt of payment. Don&apos;t delay,
         as places are limited.
       </p>
 

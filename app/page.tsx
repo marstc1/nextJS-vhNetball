@@ -61,12 +61,12 @@ export default function Home() {
                   received after the 1st year, the tournament has become an
                   annual event. Now on its 10th year, we have raised over
                   £29,900 for Nelson’s Journey. There services are invaluable,
-                  and it’s an honor to assist them by raising as much as we can
+                  and it’s an honour to assist them by raising as much as we can
                   at the tournament.
                 </p>
                 <p className="mb-6">
                   Our annual netball tournament celebrates Victoria Hawkins, a
-                  remarkable netballer known in the community for her time with
+                  remarkable netball player known in the community for her time with
                   McCarthy Stars and Panthers. The event also raises funds for
                   Nelson&apos;s Journey, a charity close to our hearts.
                 </p>

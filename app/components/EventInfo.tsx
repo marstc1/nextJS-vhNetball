@@ -70,7 +70,7 @@ const EventInfo = () => {
 
           <p className="my-4">
             Friendly but competitive, ideal for those who don’t usually play.
-            Mixed teams are welcome, with up to three affiliated netballers
+            Mixed teams are welcome, with up to three affiliated netball players
             (only two on court at a time).
           </p>
 
