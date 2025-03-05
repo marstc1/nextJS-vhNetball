@@ -206,14 +206,9 @@ const RegistrationForm = () => {
                         <div
                           style={{ display: "flex", flexDirection: "column" }}
                         >
-                          <span className="font-semibold">
-                            C award non playing umpires required per team
-                          </span>
-                          <br />
                           <span className="text-xs">
-                            We may accept experienced beginners working towards
-                            their C award, depending on the number of
-                            experienced umpires we have.
+                            Each team entering into the competitive tournament
+                            must provide a C award non playing umpire.
                           </span>
                         </div>
                       </ReactTooltip>
