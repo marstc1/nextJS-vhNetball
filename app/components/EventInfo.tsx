@@ -19,7 +19,7 @@ const EventInfo = () => {
             <p>
               <strong>Entry cutoff:</strong>
             </p>
-            <p>09/06/2025</p>
+            <p>11/04/2025</p>
             <p>unless filled earlier</p>
           </div>
           <div className="bg-violet-50 rounded p-4">
@@ -123,7 +123,7 @@ const EventInfo = () => {
 
           <div className="mt-10">
             <span className="font-semibold">
-              Each team is required to provide a C award umpire.
+              C award non playing umpires required per team.
             </span>
             <br />
             <span className="text-xs">

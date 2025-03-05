@@ -207,8 +207,7 @@ const RegistrationForm = () => {
                           style={{ display: "flex", flexDirection: "column" }}
                         >
                           <span className="font-semibold">
-                            Competitive teams are required to provide a C award
-                            umpire.
+                            C award non playing umpires required per team
                           </span>
                           <br />
                           <span className="text-xs">
