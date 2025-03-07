@@ -11,7 +11,7 @@ const RegistrationForm = () => {
   const [formData, setFormData] = useState({
     teamName: "",
     playoffMusic: "",
-    playType: "",
+    playType: "competitive-womens",
     umpireName: "",
     primaryContact: { name: "", phone: "", email: "" },
     secondaryContact: { name: "", phone: "", email: "" },
@@ -179,8 +179,6 @@ const RegistrationForm = () => {
                     required
                     value={formData.playType}
                     onChange={handleInputChange}
-                    defaultValue="competitive-womens"
-                    disabled
                   >
                     <option value="competitive-womens">
                       Womens Competitive
