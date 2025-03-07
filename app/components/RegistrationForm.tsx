@@ -181,9 +181,6 @@ const RegistrationForm = () => {
                     defaultValue="competitive-womens"
                     disabled
                   >
-                    <option value="" disabled>
-                      Select an option
-                    </option>
                     <option value="competitive-womens">
                       Womens Competitive
                     </option>
