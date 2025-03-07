@@ -52,6 +52,10 @@ const Hero = () => {
               section below.
             </p>
             <p className="mb-4">
+              <b>The fun tournament is now fully booked</b>, but there are still some
+              places left for the women&apos;s competitive tournament!
+            </p>
+            <p className="mb-4">
               Make sure to register your team soon, as places fill up fast.
             </p>
           </div>

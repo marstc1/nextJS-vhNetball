@@ -129,6 +129,7 @@ const RegistrationForm = () => {
       {!isRegistrationFormSubmitted ? (
         <div>
           <h2 className="text-2xl font-semibold my-6">Step 1 of 2: Register</h2>
+          <p className="pb-8 text-sm">The fun tournament is fully booked, but there are still some places left for the women&apos;s competitive tournament!</p>
 
           <div>
             <form
