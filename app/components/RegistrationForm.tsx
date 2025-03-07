@@ -178,11 +178,12 @@ const RegistrationForm = () => {
                     required
                     value={formData.playType}
                     onChange={handleInputChange}
+                    defaultValue="competitive-womens"
+                    disabled
                   >
                     <option value="" disabled>
                       Select an option
                     </option>
-                    <option value="just-for-fun">Fun</option>
                     <option value="competitive-womens">
                       Womens Competitive
                     </option>
