@@ -187,8 +187,6 @@ const RegistrationForm = () => {
                   </select>
                 </div>
 
-                {/* Conditionally render Umpire Name field */}
-                {formData.playType.includes("competitive") && (
                   <div>
                     <label className="flex items-center">
                       Umpire name
@@ -222,7 +220,6 @@ const RegistrationForm = () => {
                       onChange={handleInputChange}
                     />
                   </div>
-                )}
               </div>
 
               <div className="grid md:grid-cols-2 md:gap-6">
