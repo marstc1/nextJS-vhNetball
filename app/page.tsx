@@ -1,7 +1,7 @@
 import Image from "next/image";
-import RegistrationForm from "./components/RegistrationForm";
 import Hero from "./components/Hero";
 import EventInfo from "./components/EventInfo";
+import RegistrationClosed from "./components/RegistrationClosed";
 
 export default function Home() {
   return (
@@ -25,7 +25,7 @@ export default function Home() {
           <h2 className="text-3xl font-bold pt-8">Register and Pay</h2>
 
           <section className="lg:mx-16 my-10 px-8 py-4 border-2 border-neutral-300 bg-neutral-50 text-indigo-950 rounded-md shadow-lg">
-            <RegistrationForm />
+            <RegistrationClosed />
           </section>
         </div>
       </div>

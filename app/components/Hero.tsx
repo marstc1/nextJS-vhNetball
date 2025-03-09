@@ -52,14 +52,14 @@ const Hero = () => {
               section below.
             </p>
             <p className="mb-4">
-              <b>The fun tournament is now fully booked</b>, but there are still some
-              places left for the women&apos;s competitive tournament!
-            </p>
-            <p className="mb-4">
-              Make sure to register your team soon, as places fill up fast.
+              <b>
+                The fun tournament and the women&apos;s competitive tournament
+                are now fully booked.
+              </b>{" "}
+              Registrations for this year&apos;s event are officially closed.
             </p>
           </div>
-          <div className="py-8">
+          {/* <div className="py-8">
             <div className="relative inline-block">
               <a
                 href="#registration-form"
@@ -76,7 +76,7 @@ const Hero = () => {
                 />
               </a>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className="hidden w-full md:w-1/2 md:flex md:items-end">

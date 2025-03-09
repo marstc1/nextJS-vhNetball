@@ -19,8 +19,7 @@ const EventInfo = () => {
             <p>
               <strong>Entry cutoff:</strong>
             </p>
-            <p>11/04/2025</p>
-            <p>unless filled earlier</p>
+            <p>Now closed</p>
           </div>
           <div className="bg-violet-50 rounded p-4">
             <p>
